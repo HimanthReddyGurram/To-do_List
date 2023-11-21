@@ -1,6 +1,7 @@
 # toDoList
 A to do list website where we can add things to do and check-off things we have done with postgreSQL database, node.js and express.js backend.
 It performs CRUD operations.
+(This website has a backend so the data doesnot get lost when refreshing websites or servers.)
 
 ## Technologies
 * Javascript
