@@ -6,10 +6,10 @@ const app = express();
 const port = 4000;
 
 const db = new pg.Client({
-  user: "himanth",
+  user: "",
   host: "localhost",
-  database: "school",
-  password: "Joy@143100",
+  database: "",
+  password: "",
   port: 5432,
 });
 db.connect();
@@ -17,10 +17,10 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let items = [
-  { id: 1, title: "Buy milk" },
-  { id: 2, title: "Finish homework" },
-];
+// let items = [
+//   { id: 1, title: "Buy milk" },
+//   { id: 2, title: "Finish homework" },
+// ];
 
 async function it(){
   const k = await db.query("select * from items;")
