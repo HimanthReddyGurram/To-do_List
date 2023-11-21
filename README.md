@@ -20,7 +20,7 @@ Now the run the code which is there in the **queries.sql** file into the query t
 
 If you are having trouble doing that then just insert the code into the place shown in the image below on pgAdmin.
 
-
+![image](https://github.com/HimanthReddyGurram/toDoList/blob/main/public/assets/icons/Screenshot%20(10).png)
 
 In the following code which spans from line 8 to 14 on index.js file, please insert user and password values from when you register with pgAdmin on your local pc and database name from when you created a database.
 ```javascript
@@ -36,10 +36,10 @@ const db = new pg.Client({
 From your command line:
 ```bash
 # Clone this repository
-git clone https://github.com/HimanthReddyGurram/Blog.git
+git clone https://github.com/HimanthReddyGurram/toDoList.git
 
 # Go into the repository
-$ cd Blog.git
+$ cd toDoList.git
 
 # Install dependencies
 npm install
