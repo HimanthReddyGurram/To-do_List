@@ -17,11 +17,6 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// let items = [
-//   { id: 1, title: "Buy milk" },
-//   { id: 2, title: "Finish homework" },
-// ];
-
 async function it(){
   const k = await db.query("select * from items;")
   return k.rows;
@@ -37,8 +32,6 @@ app.get("/", async(req, res) => {
 
 app.post("/add", async(req, res) => {
   const item = req.body.newItem;
-  // console.log(item)
-  // items.push({ title: item });
   await db.query("INSERT INTO items(title) VALUES ($1);",[item])
   res.redirect("/");
 });
