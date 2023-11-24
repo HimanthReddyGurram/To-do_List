@@ -1,4 +1,4 @@
-# toDoList
+# To do List
 A to do list website where we can add things to do and check-off things we have done with postgreSQL database, node.js and express.js backend.
 It performs CRUD operations.
 (This website has a backend so the data doesnot get lost when refreshing websites or servers.)
@@ -33,14 +33,15 @@ const db = new pg.Client({
   port: 5432,
 });
 ```
+If you want to start working on your project right away, you might want to try the following commands:
 
 From your command line:
 ```bash
 # Clone this repository
-git clone https://github.com/HimanthReddyGurram/toDoList.git
+git clone https://github.com/HimanthReddyGurram/To-do_List.git
 
 # Go into the repository
-$ cd toDoList.git
+$ cd To-do_List.git
 
 # Install dependencies
 npm install
